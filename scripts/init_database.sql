@@ -6,7 +6,7 @@
    Purpose:
        - This script sets up a clean Data Warehouse environment from scratch.
        - It drops the existing 'DataWarehouse' database (if it exists) and recreates it.
-       - It then creates three schemas â€” bronze, silver, and gold â€” representing
+       - It then creates three schemas — bronze, silver, and gold — representing
          the data ingestion, transformation, and analytics layers respectively.
 
    WARNING:
