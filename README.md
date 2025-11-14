@@ -73,7 +73,7 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 ## 📂 Repository Structure
 ```
-ddata-warehouse-project/
+SQL-Data-Warehouse-Project/
 │
 ├── datasets/                               # Raw datasets used for the project (ERP, CRM, etc.)
 │
