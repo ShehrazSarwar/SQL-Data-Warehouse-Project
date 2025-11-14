@@ -99,7 +99,7 @@ ddata-warehouse-project/
 ├── tests/                                    # Data quality tests, schema validation, pipeline tests
 │
 ├── README.md                                 # Project overview, setup, usage instructions
-└── LICENSE                                    # License information for the repository
+└── LICENSE                                   # License information for the repository
 
 ```
 ---
