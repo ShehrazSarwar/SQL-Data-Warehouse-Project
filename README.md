@@ -73,27 +73,34 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 ## 📂 Repository Structure
 ```
-data-warehouse-project/
+ddata-warehouse-project/
 │
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                               # Raw datasets used for the project (ERP, CRM, etc.)
 │
-├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+├── docs/                                   # Project documentation and architecture details
+│   │
+│   ├── drawio_files/                       # Editable Draw.io diagrams (source files)
+│   │
+│   ├── ETL.png                              # Exported PNG: ETL workflow diagram
+│   ├── data_architecture.png                # Exported PNG: DW architecture
+│   ├── data_flow.png                        # Exported PNG: Data flow diagram
+│   ├── data_integration.png                 # Exported PNG: Data integration steps / pipelines
+│   ├── data_model.png                       # Exported PNG: Star Schema data model
+│   ├── data_layers.pdf                      # PDF describing Bronze / Silver / Gold layers
+│   │
+│   ├── data_catalog.md                      # Dataset metadata, field descriptions, data types
+│   ├── naming_conventions.md                # Naming rules for tables, columns, files, layers
 │
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
+├── scripts/                                  # SQL scripts and processing code
+│   ├── bronze/                               # Extraction & raw ingestion scripts
+│   ├── silver/                               # Cleaning, standardization & enrichment scripts
+│   ├── gold/                                 # Analytical model creation (fact/dim tables)
 │
-├── tests/                              # Test scripts and quality files
+├── tests/                                    # Data quality tests, schema validation, pipeline tests
 │
-├── README.md                           # Project overview and instructions
-└── LICENSE                             # License information for the repository
+├── README.md                                 # Project overview, setup, usage instructions
+└── LICENSE                                    # License information for the repository
+
 ```
 ---
 
